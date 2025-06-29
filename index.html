@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simulateur de revenus mensuels sur capital</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="fdj-hero">
+            <div class="fdj-hero-icon">🎉</div>
+            <div class="fdj-hero-text">
+                <h1>Simulateur de revenu mensuel</h1>
+                <p>
+                    <span class="fdj-hero-highlight">Gagnez au Loto ou à l’EuroMillions&nbsp;?</span><br>
+                    Découvrez combien vous pourriez toucher chaque mois en plaçant votre gain, sans jamais toucher au
+                    capital.<br>
+                    <span class="fdj-hero-sub">Saisissez votre montant et choisissez un placement pour simuler votre
+                        rente mensuelle festive&nbsp;!</span>
+                </p>
+            </div>
+        </div>
+
+        <form id="simulator-form" autocomplete="off">
+            <label for="capital">Montant du capital (€)</label>
+            <input type="number" id="capital" min="1000" step="1000" required placeholder="Ex : 5 000 000">
+
+            <label for="placement">Type de placement</label>
+            <select id="placement" required>
+                <option value="2.5">Sécurisé (2,5 %)</option>
+                <option value="4.5">Diversifié (4,5 %)</option>
+                <option value="7">Dynamique/risqué (7 %)</option>
+            </select>
+        </form>
+        <div id="result" class="result">
+            Saisissez un montant pour simuler le revenu mensuel net.
+        </div>
+    </div>
+    <img src="assets/images/champagne.png" alt="Champagne" class="champagne-bottom" />
+    <script src="assets/js/fdj-effects.js"></script>
+</body>
+
+</html>
