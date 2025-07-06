@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://loto-simulateur.monoutil.ovh/sitemap.xml
